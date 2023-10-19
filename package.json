@@ -30,12 +30,13 @@
   },
   "scripts": {
     "dev": "npm run storybook",
-    "build": "npm run clean && tsc",
+    "build": "npm run clean && tsc && npm run copyfiles",
     "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "clean": "rimraf dist/"
+    "clean": "rimraf dist/",
+    "copyfiles": "copyfiles -u 1 src/**/*.css dist/"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.2.2",
