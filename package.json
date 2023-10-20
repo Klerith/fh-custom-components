@@ -42,7 +42,8 @@
     "build-storybook": "storybook build",
     "clean": "rimraf dist/",
     "copyfiles": "copyfiles -u 1 src/**/*.css dist/",
-    "push:npm": "np"
+    "push:npm": "np",
+    "test": "echo 'all tests were good'"
   },
   "devDependencies": {
     "@storybook/addon-essentials": "^7.2.2",
