@@ -1,8 +1,10 @@
 {
   "name": "fh-custom-components",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.1-rc4",
   "type": "module",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
   "keywords": [
     "react",
     "dev",
@@ -25,8 +27,8 @@
     ]
   },
   "peerDependencies": {
-    "react": "^16.8.0",
-    "react-dom": "^16.8.0"
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0",
+    "react-dom": "^16.8.0 || ^17.0.0 || ^18.0.0"
   },
   "scripts": {
     "dev": "npm run storybook",
